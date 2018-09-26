@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet"
+    type="text/css" />
+
+
+  <style>
+    @font-face {
+      src: url("fonts/GuiltSans_v1.01.otf") format("opentype");
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:link {
+      color: #0000ff;
+      border-bottom: 1px solid #ff0000;
+    }
+
+    a:visited {
+      color: #0000ff;
+      border-bottom: 1px solid #c0c0c0;
+    }
+
+    a:hover {
+      color: #000000;
+      border-bottom: 2px dashed #dd0000;
+    }
+
+    textarea {
+      font-family: inherit;
+      font-size: 48px;
+      width: 100%;
+      height: 70vh;
+    }
+
+    body {
+      font-family: 'Guilt Sans', Fallback, sans-serif;
+      margin: 0;
+    }
+  </style>
+
+  <script>
+
+    function init() {
+
+      let abc = `
+    ABC
+   DEFGH
+  IJKLMNO
+PQRSTUVWXYZ
+`
+        ;
+      let freetextId = "freetext";
+      document.getElementById(freetextId).value = abc;
+    }
+
+  </script>
+
+</head>
+
+<body onload="init();">
+  <h4>CREDITS: <a href="https://lihkg.com/thread/835159/page/1">我整好咗個新字體啦😛 香港海綿體😛</a></h4>
+  <h5>VERSION: 香港海綿體1.01</h5>
+
+  <textarea placeholder="TYPE HERE" id="freetext" rows="6"></textarea>
+
+</body>
+
+
+
+</html>
